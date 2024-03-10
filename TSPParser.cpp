@@ -7,7 +7,7 @@
 #include <iostream>
 #include <string>
 #include <utility>
-#include <limits> // Добавляем для доступа к std::numeric_limits
+#include <limits> 
 
 using namespace std;
 
@@ -29,7 +29,6 @@ public:
         int verticesCount;
         file >> verticesCount;
         
-        // Пропускаем остаток строки после чтения количества вершин
         file.ignore(numeric_limits<streamsize>::max(), '\n');
 
         coordinates.reserve(verticesCount);
